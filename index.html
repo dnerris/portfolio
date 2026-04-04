@@ -579,20 +579,33 @@
         </div>
     </footer>
 
-    <script>
+   <script>
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
 
+        // Toggle menu when clicking the button
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
 
-        // Optional: Close the mobile menu when a link is clicked
+        // Close menu when clicking a link
         const mobileLinks = menu.querySelectorAll('a');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
             });
+        });
+
+        // Close menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = menu.contains(event.target);
+            const isClickOnButton = btn.contains(event.target);
+            const isMenuOpen = !menu.classList.contains('hidden');
+
+            // If the menu is open, and the click was not on the menu or the button, close it
+            if (isMenuOpen && !isClickInsideMenu && !isClickOnButton) {
+                menu.classList.add('hidden');
+            }
         });
     </script>
 </body>
