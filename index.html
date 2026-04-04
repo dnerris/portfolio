@@ -36,7 +36,7 @@
 <body class="bg-white text-slate-900 antialiased overflow-x-hidden">
 
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
+   <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-1 cursor-pointer">
@@ -46,18 +46,27 @@
             </div>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#how-i-work" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">My Approach</a>
-                    <a href="#leadership" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Leadership</a>
-                    <a href="#insights" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">AI Strategy</a>
-                    <a href="#the-case" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Why Me</a>
-                    <a href="#stories" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Stories</a>
+                <a href="#leadership" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Leadership</a>
+                <a href="#insights" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">AI Strategy</a>
+                <a href="#the-case" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Why Me</a>
+                <a href="#stories" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Stories</a>
                 <a href="mailto:dnerris@me.com" class="text-sm font-medium px-5 py-2.5 rounded-full border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">Contact</a>
             </div>
             <div class="md:hidden flex items-center">
-                    <button class="text-slate-600 focus:outline-none">
+                    <button id="mobile-menu-btn" class="text-slate-600 focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </button>
                 </div>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-4 shadow-lg absolute w-full">
+            <a href="#how-i-work" class="block text-sm font-medium text-slate-600 hover:text-slate-900">My Approach</a>
+            <a href="#leadership" class="block text-sm font-medium text-slate-600 hover:text-slate-900">Leadership</a>
+            <a href="#insights" class="block text-sm font-medium text-slate-600 hover:text-slate-900">AI Strategy</a>
+            <a href="#the-case" class="block text-sm font-medium text-slate-600 hover:text-slate-900">Why Me</a>
+            <a href="#stories" class="block text-sm font-medium text-slate-600 hover:text-slate-900">Stories</a>
+            <a href="mailto:dnerris@me.com" class="block text-sm font-medium text-primary">Contact</a>
         </div>
     </nav>
 
@@ -569,5 +578,24 @@
                 &copy; 2026
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Optional: Close the mobile menu when a link is clicked
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
 </body>
 </html>
