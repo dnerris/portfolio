@@ -1,180 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DN | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .text-gradient {
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1d4ed8', // blue-700
-                        secondary: '#3b82f6', // blue-500
-                        dark: '#0f172a', // slate-900
-                        darker: '#020617', // slate-950
-                        light: '#f8fafc', // slate-50
-                    }
-                }
-            }
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DN | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1d4ed8', // blue-700
+                        secondary: '#3b82f6', // blue-500
+                        dark: '#0f172a', // slate-900
+                        darker: '#020617', // slate-950
+                        light: '#f8fafc', // slate-50
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-white text-slate-900 antialiased overflow-x-hidden">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center gap-1 cursor-pointer">
-                    <span class="font-bold text-2xl tracking-tighter">DN</span>
-                    <span class="text-slate-300 text-2xl font-light">|</span>
-                    <span class="font-semibold text-lg tracking-wide text-slate-700">PORTFOLIO</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#the-challenge" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">The Reality</a>
-                    <a href="#the-proof" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">The Proof</a>
-                    <a href="#the-approach" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">My Approach</a>
-                    <a href="#leadership" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Leadership</a>
-                    <a href="#operational-ai" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Operational AI</a>
-                    <a href="mailto:dnerris@me.com" class="text-sm font-medium px-5 py-2.5 rounded-full border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-600 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    </button>
-                </div>
-            </div>
-        </div>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-1 cursor-pointer">
+                    <span class="font-bold text-2xl tracking-tighter">DN</span>
+                    <span class="text-slate-300 text-2xl font-light">|</span>
+                    <span class="font-semibold text-lg tracking-wide text-slate-700">PORTFOLIO</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#the-challenge" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">The Reality</a>
+                    <a href="#the-proof" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">The Proof</a>
+                    <a href="#the-approach" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">My Approach</a>
+                    <a href="#leadership" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Leadership</a>
+                    <a href="#operational-ai" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">Operational AI</a>
+                    <a href="mailto:dnerris@me.com" class="text-sm font-medium px-5 py-2.5 rounded-full border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-4 shadow-lg absolute w-full">
-            <a href="#the-challenge" class="block text-sm font-medium text-slate-600 hover:text-slate-900">The Reality</a>
-            <a href="#the-proof" class="block text-sm font-medium text-slate-600 hover:text-slate-900">The Proof</a>
-            <a href="#the-approach" class="block text-sm font-medium text-slate-600 hover:text-slate-900">My Approach</a>
-            <a href="#leadership" class="block text-sm font-medium text-slate-600 hover:text-slate-900">Leadership</a>
-            <a href="#operational-ai" class="block text-sm font-medium text-slate-600 hover:text-slate-900">Operational AI</a>
-            <a href="mailto:dnerris@me.com" class="block text-sm font-medium text-primary">Contact</a>
-        </div>
-    </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-4 shadow-lg absolute w-full">
+            <a href="#the-challenge" class="block text-sm font-medium text-slate-600 hover:text-slate-900">The Reality</a>
+            <a href="#the-proof" class="block text-sm font-medium text-slate-600 hover:text-slate-900">The Proof</a>
+            <a href="#the-approach" class="block text-sm font-medium text-slate-600 hover:text-slate-900">My Approach</a>
+            <a href="#leadership" class="block text-sm font-medium text-slate-600 hover:text-slate-900">Leadership</a>
+            <a href="#operational-ai" class="block text-sm font-medium text-slate-600 hover:text-slate-900">Operational AI</a>
+            <a href="mailto:dnerris@me.com" class="block text-sm font-medium text-primary">Contact</a>
+        </div>
+    </nav>
 
-    <!-- 1. Hero Section -->
-    <section id="hero" class="pt-32 pb-24 px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-y-10 lg:gap-x-16 items-center">
+    <!-- 1. Hero Section -->
+    <section id="hero" class="pt-32 pb-24 px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-y-10 lg:gap-x-16 items-center">
 
-        <!-- Header/Name -->
-        <div class="order-1 lg:col-span-8">
-            <div class="text-primary font-semibold text-lg tracking-wide">
-                Demetrios Nerris
-            </div>
-        </div>
+        <!-- Header/Name -->
+        <div class="order-1 lg:col-span-8">
+            <div class="text-primary font-semibold text-lg tracking-wide">
+                Demetrios Nerris
+            </div>
+        </div>
 
-        <!-- Image Section -->
-        <div class="order-2 lg:order-none lg:col-span-4 lg:row-span-2 justify-self-center lg:justify-self-end w-full max-w-[260px] md:max-w-[300px] lg:max-w-[360px] relative">
-            <div class="absolute inset-0 bg-slate-100 rounded-3xl transform translate-x-3 translate-y-3"></div>
-            <img src="dnerris.png" alt="Demetrios Nerris" onerror="this.src='https://placehold.co/400x500/slate/white?text=DN'" class="relative z-10 w-full h-auto rounded-3xl shadow-xl object-cover border border-slate-200 aspect-[4/5]">
-        </div>
+        <!-- Image Section -->
+        <div class="order-2 lg:order-none lg:col-span-4 lg:row-span-2 justify-self-center lg:justify-self-end w-full max-w-[260px] md:max-w-[300px] lg:max-w-[360px] relative">
+            <div class="absolute inset-0 bg-slate-100 rounded-3xl transform translate-x-3 translate-y-3"></div>
+            <img src="dnerris.png" alt="Demetrios Nerris" onerror="this.src='https://placehold.co/400x500/slate/white?text=DN'" class="relative z-10 w-full h-auto rounded-3xl shadow-xl object-cover border border-slate-200 aspect-[4/5]">
+        </div>
 
-        <!-- Text Content -->
-        <div class="order-3 lg:col-span-8">
-            <h1 class="text-[44px] md:text-[56px] lg:text-[68px] font-bold tracking-tight leading-[1.1] mb-8 text-darker">
-                Turning complex products.<br>
-                <span class="text-primary">Into clear revenue.</span>
-            </h1>
+        <!-- Text Content -->
+        <div class="order-3 lg:col-span-8">
+            <h1 class="text-[44px] md:text-[56px] lg:text-[68px] font-bold tracking-tight leading-[1.1] mb-8 text-darker">
+                Turning complex products.<br>
+                <span class="text-primary">Into clear revenue.</span>
+            </h1>
 
-            <p class="text-xl text-slate-500 max-w-2xl leading-relaxed mb-12">
-                The market doesn't need more theoretical strategy. It needs leaders who can take complex software, align teams around a single narrative, and drive actual revenue—using AI to execute faster, not just talk about it.
-            </p>
+            <p class="text-xl text-slate-500 max-w-2xl leading-relaxed mb-12">
+                The market doesn't need more theoretical strategy. It needs leaders who can take complex software, align teams around a single narrative, and drive actual revenue—using AI to execute faster, not just talk about it.
+            </p>
 
-            <div class="flex flex-wrap items-center gap-4">
-                <a href="mailto:dnerris@me.com" class="bg-primary hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-medium transition-all flex items-center gap-2">
-                    Start A Conversation
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/dnerris" target="_blank" rel="noopener noreferrer" class="bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 px-8 py-4 rounded-xl font-medium transition-all flex items-center gap-2 shadow-sm">
-                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                    Connect on Linkedin
-                </a>
-            </div>
-        </div>
-    </section>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="mailto:dnerris@me.com" class="bg-primary hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-medium transition-all flex items-center gap-2">
+                    Start A Conversation
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/dnerris" target="_blank" rel="noopener noreferrer" class="bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 px-8 py-4 rounded-xl font-medium transition-all flex items-center gap-2 shadow-sm">
+                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    Connect on Linkedin
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <!-- 2. The Challenge — Approach 2 structure, Approach 1 citation-backed content -->
-    <section id="the-challenge" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20 bg-slate-50 rounded-3xl mb-12">
-        <h2 class="text-4xl md:text-5xl font-bold text-darker mb-6">The Current Reality</h2>
-        <div class="border-l-4 border-primary pl-6 py-2 mb-16 max-w-4xl">
-            <p class="text-xl text-slate-500 italic leading-relaxed">
-               "Most companies have an AI strategy. Almost none have a leader who knows how to make it pay off."
-            </p>
-        </div>
+    <!-- 2. The Challenge — Approach 2 structure, Approach 1 citation-backed content -->
+    <section id="the-challenge" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20 bg-slate-50 rounded-3xl mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-darker mb-6">The Current Reality</h2>
+        <div class="border-l-4 border-primary pl-6 py-2 mb-16 max-w-4xl">
+            <p class="text-xl text-slate-500 italic leading-relaxed">
+               "Most companies have an AI strategy. Almost none have a leader who knows how to make it pay off."
+            </p>
+        </div>
 
-        <!-- Approach 1's citation-backed content, preserved inside Approach 2's grid layout -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div>
-                <div class="text-2xl font-bold text-darker mb-4">Only 15% have truly embedded AI into operations.</div>
-                <p class="text-sm text-slate-600 mb-4">Buying AI tools is easy. Changing how a team works to actually make money from them is where most companies fail.</p>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">HUBSPOT/G2</div>
-            </div>
-            <div>
-                <div class="text-2xl font-bold text-darker mb-4">Boards want leaders who know how to build.</div>
-                <p class="text-sm text-slate-600 mb-4">Companies have enough big ideas. They are looking for people who can take a complicated product, explain clearly why it matters, and turn that into revenue.</p>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">FORRESTER PREDICTIONS</div>
-            </div>
-            <div>
-                <div class="text-2xl font-bold text-darker mb-4">Strategy has to come from the top.</div>
-                <p class="text-sm text-slate-600 mb-4">If leadership doesn't fundamentally change how sales, marketing, and product teams work together, adding new technology won't save them.</p>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">PWC AI BUSINESS PREDICTIONS</div>
-            </div>
-            <div>
-                <div class="text-2xl font-bold text-darker mb-4">73% prioritize problem-solving over technical skill.</div>
-                <p class="text-sm text-slate-600 mb-4">Knowing how to use a specific tool matters less than knowing what problem needs solving. The market is shifting away from order-takers and toward proactive builders.</p>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">KORN FERRY TALENT TRENDS</div>
-            </div>
-        </div>
-    </section>
+        <!-- Approach 1's citation-backed content, preserved inside Approach 2's grid layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div>
+                <div class="text-2xl font-bold text-darker mb-4">Only 15% have truly embedded AI into operations.</div>
+                <p class="text-sm text-slate-600 mb-4">Buying AI tools is easy. Changing how a team works to actually make money from them is where most companies fail.</p>
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">HUBSPOT/G2</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-darker mb-4">Boards want leaders who know how to build.</div>
+                <p class="text-sm text-slate-600 mb-4">Companies have enough big ideas. They are looking for people who can take a complicated product, explain clearly why it matters, and turn that into revenue.</p>
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">FORRESTER PREDICTIONS</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-darker mb-4">Strategy has to come from the top.</div>
+                <p class="text-sm text-slate-600 mb-4">If leadership doesn't fundamentally change how sales, marketing, and product teams work together, adding new technology won't save them.</p>
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">PWC AI BUSINESS PREDICTIONS</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold text-darker mb-4">73% prioritize problem-solving over technical skill.</div>
+                <p class="text-sm text-slate-600 mb-4">Knowing how to use a specific tool matters less than knowing what problem needs solving. The market is shifting away from order-takers and toward proactive builders.</p>
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">KORN FERRY TALENT TRENDS</div>
+            </div>
+        </div>
+    </section>
 
-  <!-- 3. The Proof (Stats & Stories) -->
-    <section id="the-proof" class="bg-darker py-24 px-6 lg:px-8 scroll-mt-20">
+    <!-- 3. The Proof (Stats & Stories) -->
+    <section id="the-proof" class="bg-darker py-20 px-6 lg:px-8 scroll-mt-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-20">
+            <div>
+                <div class="text-5xl md:text-6xl font-bold text-primary mb-2">$600M</div>
+                <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">Portfolio Scale</div>
+            </div>
+            <div>
+                <div class="text-5xl md:text-6xl font-bold text-white mb-2">18x</div>
+                <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">Marketing ROI</div>
+            </div>
+            <div>
+                <div class="text-5xl md:text-6xl font-bold text-primary mb-2">$91M</div>
+                <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">AI-Driven Revenue</div>
+            </div>
+            <div>
+                <div class="text-5xl md:text-6xl font-bold text-white mb-2">+50%</div>
+                <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">Team Speed</div>
+            </div>
+        </div>
+
         <div class="max-w-5xl mx-auto">
-            
-            <!-- Title & Context -->
-            <div class="mb-14">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">The Proof</h2>
-                <p class="text-xl text-slate-400 max-w-2xl leading-relaxed">Real examples of turning complex business roadblocks into measurable revenue.</p>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-16 gap-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-white">The Proof</h2>
+                <p class="text-slate-400 max-w-sm md:text-right text-lg">Real examples of turning complex business roadblocks into measurable revenue.</p>
             </div>
 
-            <!-- Stats Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 py-10 border-y border-slate-800 mb-16">
-                <div>
-                    <div class="text-5xl md:text-6xl font-bold text-primary mb-2">$600M</div>
-                    <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">Portfolio Scale</div>
-                </div>
-                <div>
-                    <div class="text-5xl md:text-6xl font-bold text-white mb-2">18x</div>
-                    <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">Marketing ROI</div>
-                </div>
-                <div>
-                    <div class="text-5xl md:text-6xl font-bold text-primary mb-2">$91M</div>
-                    <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">AI-Driven Revenue</div>
-                </div>
-                <div>
-                    <div class="text-5xl md:text-6xl font-bold text-white mb-2">+50%</div>
-                    <div class="text-slate-400 text-sm font-semibold tracking-wider uppercase">Team Speed</div>
-                </div>
-            </div>
-
-            <!-- Stories -->
             <div class="space-y-12">
                 <!-- Story 1 -->
                 <div class="bg-slate-900 text-white rounded-3xl p-10 border border-slate-800 relative">
@@ -299,303 +295,303 @@
         </div>
     </section>
 
-    <!-- 4. The Approach — Approach 2 layout, Approach 1 card titles -->
-    <section id="the-approach" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20">
-        <h2 class="text-4xl md:text-5xl font-bold text-darker mb-8">My Approach</h2>
-        <div class="max-w-4xl mb-12">
-            <p class="text-xl text-slate-600 leading-relaxed">
-                I don't just hand my teams a list of tools; I build the systems they need to manage massive product lines. I treat marketing as a clear process: match what a complex product does with what the market actually wants to buy.
-            </p>
-        </div>
+    <!-- 4. The Approach — Approach 2 layout, Approach 1 card titles -->
+    <section id="the-approach" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20">
+        <h2 class="text-4xl md:text-5xl font-bold text-darker mb-8">My Approach</h2>
+        <div class="max-w-4xl mb-12">
+            <p class="text-xl text-slate-600 leading-relaxed">
+                I don't just hand my teams a list of tools; I build the systems they need to manage massive product lines. I treat marketing as a clear process: match what a complex product does with what the market actually wants to buy.
+            </p>
+        </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Card 1 — Approach 1 title "Validate Everything" -->
-            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex flex-col justify-between h-full">
-                <div class="flex-grow">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-primary">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-darker mb-4">Validate Everything</h3>
-                    <div class="mb-6">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
-                        <p class="text-slate-600 text-sm">Every claim must be backed by customer success stories, analyst validation, or hard data. It must tell an outcome-driven story.</p>
-                    </div>
-                    <div class="mb-6">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">EXECUTION</div>
-                        <p class="text-slate-600 text-sm">Become the go-to source for answers by building trust early and shortening the sales cycle through thought leadership and customer validation.</p>
-                    </div>
-                </div>
-                <div class="mt-8 pt-6 border-t border-slate-200">
-                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">OUTCOME</div>
-                    <p class="text-sm font-semibold text-slate-800">Lowers acquisition costs because buyers trust you before sales even reaches out.</p>
-                </div>
-            </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 — Approach 1 title "Validate Everything" -->
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex flex-col justify-between h-full">
+                <div class="flex-grow">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-darker mb-4">Validate Everything</h3>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
+                        <p class="text-slate-600 text-sm">Every claim must be backed by customer success stories, analyst validation, or hard data. It must tell an outcome-driven story.</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">EXECUTION</div>
+                        <p class="text-slate-600 text-sm">Become the go-to source for answers by building trust early and shortening the sales cycle through thought leadership and customer validation.</p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-200">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">OUTCOME</div>
+                    <p class="text-sm font-semibold text-slate-800">Lowers acquisition costs because buyers trust you before sales even reaches out.</p>
+                </div>
+            </div>
 
-            <!-- Card 2 — Approach 1 title "Teach, Don't Mandate" -->
-            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex flex-col justify-between h-full">
-                <div class="flex-grow">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-primary">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-darker mb-4">Teach, Don't Mandate</h3>
-                    <div class="mb-6">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
-                        <p class="text-slate-600 text-sm">Avoid simply assigning new software. Identify specific, painful daily bottlenecks and demonstrate how the new technology eliminates them.</p>
-                    </div>
-                    <div class="mb-6">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">EXECUTION</div>
-                        <p class="text-slate-600 text-sm">Bypass company resistance by demonstrating exactly how a new tool solves problems in seconds. Focus on teaching teams to think differently.</p>
-                    </div>
-                </div>
-                <div class="mt-8 pt-6 border-t border-slate-200">
-                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">OUTCOME</div>
-                    <p class="text-sm font-semibold text-slate-800">The team moves significantly faster without adding headcount.</p>
-                </div>
-            </div>
+            <!-- Card 2 — Approach 1 title "Teach, Don't Mandate" -->
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex flex-col justify-between h-full">
+                <div class="flex-grow">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-darker mb-4">Teach, Don't Mandate</h3>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
+                        <p class="text-slate-600 text-sm">Avoid simply assigning new software. Identify specific, painful daily bottlenecks and demonstrate how the new technology eliminates them.</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">EXECUTION</div>
+                        <p class="text-slate-600 text-sm">Bypass company resistance by demonstrating exactly how a new tool solves problems in seconds. Focus on teaching teams to think differently.</p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-200">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">OUTCOME</div>
+                    <p class="text-sm font-semibold text-slate-800">The team moves significantly faster without adding headcount.</p>
+                </div>
+            </div>
 
-            <!-- Card 3 — Approach 1 title "Resolve Internal Conflict" -->
-            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex flex-col justify-between h-full">
-                <div class="flex-grow">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-primary">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-darker mb-4">Resolve Internal Conflict</h3>
-                    <div class="mb-6">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
-                        <p class="text-slate-600 text-sm">Act as the critical link between technical product teams and buyers who prioritize business outcomes.</p>
-                    </div>
-                    <div class="mb-6">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">EXECUTION</div>
-                        <p class="text-slate-600 text-sm">Develop tailored narratives: deep technical details for practitioners using the tool, and clear financial returns for the executives writing the check.</p>
-                    </div>
-                </div>
-                <div class="mt-8 pt-6 border-t border-slate-200">
-                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">OUTCOME</div>
-                    <p class="text-sm font-semibold text-slate-800">Stops internal arguments and gets products to market much faster.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- Card 3 — Approach 1 title "Resolve Internal Conflict" -->
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex flex-col justify-between h-full">
+                <div class="flex-grow">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-darker mb-4">Resolve Internal Conflict</h3>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
+                        <p class="text-slate-600 text-sm">Act as the critical link between technical product teams and buyers who prioritize business outcomes.</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">EXECUTION</div>
+                        <p class="text-slate-600 text-sm">Develop tailored narratives: deep technical details for practitioners using the tool, and clear financial returns for the executives writing the check.</p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-200">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">OUTCOME</div>
+                    <p class="text-sm font-semibold text-slate-800">Stops internal arguments and gets products to market much faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- 5. Leadership & Human Capital -->
-    <section id="leadership" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20">
-        <h2 class="text-4xl md:text-5xl font-bold text-darker mb-6">Building Better Teams</h2>
-        <p class="text-xl text-slate-600 leading-relaxed mb-16 max-w-4xl">
-            I turn marketing departments into reliable revenue engines by changing how teams are built and how they handle obstacles.
-        </p>
+    <!-- 5. Leadership & Human Capital -->
+    <section id="leadership" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20">
+        <h2 class="text-4xl md:text-5xl font-bold text-darker mb-6">Building Better Teams</h2>
+        <p class="text-xl text-slate-600 leading-relaxed mb-16 max-w-4xl">
+            I turn marketing departments into reliable revenue engines by changing how teams are built and how they handle obstacles.
+        </p>
 
-        <div class="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-                <div class="flex items-center gap-2 text-primary font-semibold text-xs tracking-wider mb-6 uppercase">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                    TEAM ARCHITECTURE
-                </div>
-                <h3 class="text-4xl font-bold text-darker mb-6 leading-tight">Build problem-solving units, not just departments.</h3>
-                <p class="text-slate-600 mb-10 text-lg">
-                    Technical skills are easy to find; the drive to solve hard problems is rare. I organize teams around what individuals do best, turning them into highly focused, mission-driven units.
-                </p>
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+                <div class="flex items-center gap-2 text-primary font-semibold text-xs tracking-wider mb-6 uppercase">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    TEAM ARCHITECTURE
+                </div>
+                <h3 class="text-4xl font-bold text-darker mb-6 leading-tight">Build problem-solving units, not just departments.</h3>
+                <p class="text-slate-600 mb-10 text-lg">
+                    Technical skills are easy to find; the drive to solve hard problems is rare. I organize teams around what individuals do best, turning them into highly focused, mission-driven units.
+                </p>
 
-                <div class="space-y-8">
-                    <div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-2">No Order-Takers</h4>
-                        <p class="text-slate-600">I hire people who look for problems to solve before they are told to. This shifts a team from simply doing tasks to actively growing the business.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-2">Play to Strengths</h4>
-                        <p class="text-slate-600">I organize the work around what each person is naturally best at. This removes frustration and drastically speeds up our output.</p>
-                    </div>
-                </div>
-            </div>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">No Order-Takers</h4>
+                        <p class="text-slate-600">I hire people who look for problems to solve before they are told to. This shifts a team from simply doing tasks to actively growing the business.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">Play to Strengths</h4>
+                        <p class="text-slate-600">I organize the work around what each person is naturally best at. This removes frustration and drastically speeds up our output.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div class="bg-blue-50/50 rounded-3xl p-8 border-2 border-blue-100">
-                <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-8">LEADERSHIP NON-NEGOTIABLES</h4>
+            <div class="bg-blue-50/50 rounded-3xl p-8 border-2 border-blue-100">
+                <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-8">LEADERSHIP NON-NEGOTIABLES</h4>
 
-                <div class="space-y-8">
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 mt-1">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <div>
-                            <h5 class="text-lg font-bold text-slate-900 mb-1">Extreme Ownership</h5>
-                            <p class="text-sm text-slate-600">No passing the buck on performance data. The results belong to the unit.</p>
-                        </div>
-                    </div>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-bold text-slate-900 mb-1">Extreme Ownership</h5>
+                            <p class="text-sm text-slate-600">No passing the buck on performance data. The results belong to the unit.</p>
+                        </div>
+                    </div>
 
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 mt-1">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                        </div>
-                        <div>
-                            <h5 class="text-lg font-bold text-slate-900 mb-1">Strategic Curiosity</h5>
-                            <p class="text-sm text-slate-600">Every tactic must serve a "Source of Truth." If it doesn't build trust, we don't market it.</p>
-                        </div>
-                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-bold text-slate-900 mb-1">Strategic Curiosity</h5>
+                            <p class="text-sm text-slate-600">Every tactic must serve a "Source of Truth." If it doesn't build trust, we don't market it.</p>
+                        </div>
+                    </div>
 
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 mt-1">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        </div>
-                        <div>
-                            <h5 class="text-lg font-bold text-slate-900 mb-1">Speed of Execution</h5>
-                            <p class="text-sm text-slate-600">Using modern tools to bypass corporate slowdowns. We show people how something works rather than ordering them to use it.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-bold text-slate-900 mb-1">Speed of Execution</h5>
+                            <p class="text-sm text-slate-600">Using modern tools to bypass corporate slowdowns. We show people how something works rather than ordering them to use it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- 6. Operational AI -->
-    <section id="operational-ai" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20">
-        <div class="flex items-center gap-2 text-primary font-semibold text-xs tracking-wider mb-6 uppercase">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-            OPERATIONAL AI
-        </div>
-        <h2 class="text-4xl md:text-6xl font-bold text-darker mb-8">Making AI Successful</h2>
+    <!-- 6. Operational AI -->
+    <section id="operational-ai" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100 scroll-mt-20">
+        <div class="flex items-center gap-2 text-primary font-semibold text-xs tracking-wider mb-6 uppercase">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            OPERATIONAL AI
+        </div>
+        <h2 class="text-4xl md:text-6xl font-bold text-darker mb-8">Making AI Successful</h2>
 
-        <div class="border-l-4 border-primary pl-6 py-2 mb-16 max-w-4xl">
-            <p class="text-xl text-slate-500 italic leading-relaxed">
-                "Turn AI from buzzword to actual revenue. It's a fundamental shift in how to work internally and what to sell externally."
-            </p>
-        </div>
+        <div class="border-l-4 border-primary pl-6 py-2 mb-16 max-w-4xl">
+            <p class="text-xl text-slate-500 italic leading-relaxed">
+                "Turn AI from buzzword to actual revenue. It's a fundamental shift in how to work internally and what to sell externally."
+            </p>
+        </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- AI Card 1 -->
-            <div class="bg-slate-50 rounded-3xl p-10 border border-slate-200 relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-8 text-slate-200">
-                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                </div>
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-bold text-darker mb-2">Internal Speed</h3>
-                    <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-8">EFFICIENCY & VELOCITY</p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- AI Card 1 -->
+            <div class="bg-slate-50 rounded-3xl p-10 border border-slate-200 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 text-slate-200">
+                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold text-darker mb-2">Internal Speed</h3>
+                    <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-8">EFFICIENCY & VELOCITY</p>
 
-                    <div class="mb-8">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
-                        <p class="text-slate-600 text-sm leading-relaxed">Instead of just mandating new software, re-architect how organizations operate. By deploying AI agents to eliminate repetitive drag, teams are freed to focus entirely on critical work. This strategy increased output by 50% without adding headcount.</p>
-                    </div>
+                    <div class="mb-8">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">MY STRATEGY</div>
+                        <p class="text-slate-600 text-sm leading-relaxed">Instead of just mandating new software, re-architect how organizations operate. By deploying AI agents to eliminate repetitive drag, teams are freed to focus entirely on critical work. This strategy increased output by 50% without adding headcount.</p>
+                    </div>
 
-                    <div class="mb-8">
-                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">EXECUTION</div>
-                        <ul class="space-y-3">
-                            <li class="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Faster team execution
-                            </li>
-                            <li class="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Growth without adding headcount
-                            </li>
-                            <li class="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Better team organization
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="mb-8">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">EXECUTION</div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm font-semibold text-slate-800">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Faster team execution
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-semibold text-slate-800">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Growth without adding headcount
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-semibold text-slate-800">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Better team organization
+                            </li>
+                        </ul>
+                    </div>
 
-                    <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100 mt-auto">
-                        <p class="text-sm font-semibold text-primary"><span class="text-slate-500 font-bold uppercase tracking-wider text-xs block mb-1">OUTCOME:</span> Accelerates time to market by eliminating repetitive manual work.</p>
-                    </div>
-                </div>
-            </div>
+                    <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100 mt-auto">
+                        <p class="text-sm font-semibold text-primary"><span class="text-slate-500 font-bold uppercase tracking-wider text-xs block mb-1">OUTCOME:</span> Accelerates time to market by eliminating repetitive manual work.</p>
+                    </div>
+                </div>
+            </div>
 
-            <!-- AI Card 2 -->
-            <div class="bg-darker text-white rounded-3xl p-10 border border-slate-800 relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-8 text-slate-800">
-                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-                </div>
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-bold mb-2">Product Innovation</h3>
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">BUILDING REVENUE</p>
+            <!-- AI Card 2 -->
+            <div class="bg-darker text-white rounded-3xl p-10 border border-slate-800 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 text-slate-800">
+                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                </div>
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold mb-2">Product Innovation</h3>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-8">BUILDING REVENUE</p>
 
-                    <div class="mb-8">
-                        <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">MY STRATEGY</div>
-                        <p class="text-slate-300 text-sm leading-relaxed">Rather than treating AI as a feature to be bolted onto software, the emphasis is on an AI-first mindset. The true value lies in shifting the conversation from how the technology works to the actual problems it solves—a focus that drove $91M in revenue.</p>
-                    </div>
+                    <div class="mb-8">
+                        <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">MY STRATEGY</div>
+                        <p class="text-slate-300 text-sm leading-relaxed">Rather than treating AI as a feature to be bolted onto software, the emphasis is on an AI-first mindset. The true value lies in shifting the conversation from how the technology works to the actual problems it solves—a focus that drove $91M in revenue.</p>
+                    </div>
 
-                    <div class="mb-8">
-                        <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">EXECUTION</div>
-                        <ul class="space-y-3">
-                            <li class="flex items-center gap-3 text-sm font-semibold text-white">
-                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Launching completely new AI products
-                            </li>
-                            <li class="flex items-center gap-3 text-sm font-semibold text-white">
-                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Positioning complex tech around human problems
-                            </li>
-                            <li class="flex items-center gap-3 text-sm font-semibold text-white">
-                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Driving $91M in net-new revenue
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="mb-8">
+                        <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">EXECUTION</div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm font-semibold text-white">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Launching completely new AI products
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-semibold text-white">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Positioning complex tech around human problems
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-semibold text-white">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Driving $91M in net-new revenue
+                            </li>
+                        </ul>
+                    </div>
 
-                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 mt-auto">
-                        <p class="text-sm font-semibold text-secondary"><span class="text-slate-400 font-bold uppercase tracking-wider text-xs block mb-1">OUTCOME:</span> Grows revenue by taking complicated technology and turning it into a story customers trust.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 mt-auto">
+                        <p class="text-sm font-semibold text-secondary"><span class="text-slate-400 font-bold uppercase tracking-wider text-xs block mb-1">OUTCOME:</span> Grows revenue by taking complicated technology and turning it into a story customers trust.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- 7. Footer / CTA -->
-    <section class="bg-darker text-white py-32 px-6 lg:px-8 text-center relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, #1d4ed8 0%, transparent 70%);"></div>
-        <div class="max-w-3xl mx-auto relative z-10">
-            <div class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg text-primary border border-slate-700">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-            </div>
-            <h2 class="text-5xl md:text-6xl font-bold mb-6">Let's do something<br><span class="text-primary">remarkable</span> together</h2>
-            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
-                Whether you're scaling a portfolio, navigating post-acquisition, or launching into new markets, I'd welcome a conversation.
-            </p>
-            <div class="flex justify-center gap-4">
-                <a href="mailto:dnerris@me.com" class="bg-primary hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-medium transition-all shadow-lg shadow-blue-900/20 inline-flex items-center justify-center">
-                    Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/dnerris" target="_blank" rel="noopener noreferrer" class="bg-transparent border border-slate-600 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-medium transition-all inline-flex items-center justify-center">
-                    View LinkedIn
-                </a>
-            </div>
-        </div>
-    </section>
+    <!-- 7. Footer / CTA -->
+    <section class="bg-darker text-white py-32 px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, #1d4ed8 0%, transparent 70%);"></div>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <div class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg text-primary border border-slate-700">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-bold mb-6">Let's do something<br><span class="text-primary">remarkable</span> together</h2>
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
+                Whether you're scaling a portfolio, navigating post-acquisition, or launching into new markets, I'd welcome a conversation.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="mailto:dnerris@me.com" class="bg-primary hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-medium transition-all shadow-lg shadow-blue-900/20 inline-flex items-center justify-center">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/dnerris" target="_blank" rel="noopener noreferrer" class="bg-transparent border border-slate-600 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-medium transition-all inline-flex items-center justify-center">
+                    View LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <footer class="bg-darker border-t border-slate-800 py-8 px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="text-slate-500 text-sm">
-                &copy; 2026
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-darker border-t border-slate-800 py-8 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-slate-500 text-sm">
+                &copy; 2026
+            </div>
+        </div>
+    </footer>
 
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
 
-        // Toggle menu when clicking the button
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
+        // Toggle menu when clicking the button
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
 
-        // Close menu when clicking a link
-        const mobileLinks = menu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
+        // Close menu when clicking a link
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
 
-        // Close menu when clicking outside of it
-        document.addEventListener('click', (event) => {
-            const isClickInsideMenu = menu.contains(event.target);
-            const isClickOnButton = btn.contains(event.target);
-            const isMenuOpen = !menu.classList.contains('hidden');
+        // Close menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = menu.contains(event.target);
+            const isClickOnButton = btn.contains(event.target);
+            const isMenuOpen = !menu.classList.contains('hidden');
 
-            if (isMenuOpen && !isClickInsideMenu && !isClickOnButton) {
-                menu.classList.add('hidden');
-            }
-        });
-    </script>
+            if (isMenuOpen && !isClickInsideMenu && !isClickOnButton) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
 
 </body>
 </html>
